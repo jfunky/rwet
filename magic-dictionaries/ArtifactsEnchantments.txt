@@ -1,0 +1,65 @@
+Tap: Sacrifice Black Lotus: Add three mana of any one color to your mana pool
+Tap: Add ColorlessColorless to your mana pool. Lost to time is the artificer's art of trapping light from a distant star in a ring of purest gold.
+Tap: Add Blue to your mana pool.
+Tap: Sacrifice Memory Jar: Each player exiles all cards from his or her hand face down and draws seven cards. At the beginning of the next end step, each player discards his or her hand and returns to his or her hand each card he or she exiled this way.
+As Black Vise enters the battlefield, choose an opponent.
+At the beginning of the chosen player's upkeep, Black Vise deals X damage to that player, where X is the number of cards in his or her hand minus 4.
+Grim Monolith doesn't untap during your untap step.
+Tap: Add three colorless mana to your mana pool.
+4: Untap Grim Monolith.
+Equipped creature gets +1/-1.
+Whenever equipped creature dies, draw two cards.
+Equip 1
+The mind is a beautiful bounty encased in an annoying bone container.
+3, Tap: Name a card. Reveal a card at random from your hand. If it's the named card, Cursed Scroll deals 2 damage to target creature or player.
+At the beginning of your upkeep, sacrifice Masticore unless you discard a card.
+2: Masticore deals 1 damage to target creature.
+2: Regenerate Masticore.
+Mana Vault doesn't untap during your untap step.
+At the beginning of your upkeep, you may pay 4. If you do, untap Mana Vault.
+At the beginning of your draw step, if Mana Vault is tapped, it deals 1 damage to you.
+Tap: Add ColorlessColorlessColorless to your mana pool.
+At the beginning of your draw step, you may draw two additional cards. If you do, choose two cards in your hand drawn this turn. For each of those cards, pay 4 life or put the card on top of your library.
+Creatures without flying can't attack.
+The purpose of any moat is to impede attack. Some are filled with water, some with thistles. Some are filled with things best left unseen.
+Play with the top card of your library revealed.
+You may play the top card of your library.
+"Is the inevitable any less miraculous?"
+—Veldka, wandering sage
+Red: You may put a creature card from your hand onto the battlefield. That creature gains haste. Sacrifice the creature at the beginning of the next end step.
+Skip your draw step.
+Pay 1 life: Draw a card.
+He craves only one commodity.
+Whenever a creature you control dies, each other player sacrifices a creature.
+"The bonds of loyalty can tie one to the grave."
+—Crovax, ascendant evincar
+You may play any number of lands on each of your turns.
+Whenever you play a land, if it wasn't the first land you played this turn, Fastbond deals 1 damage to you.
+Sacrifice a creature, Return Recurring Nightmare to its owner's hand: Return target creature card from your graveyard to the battlefield. Activate this ability only any time you could cast a sorcery.
+"I am confined by sleep and defined by nightmare."
+—Crovax
+Variable Colorless, Sacrifice Pernicious Deed: Destroy each artifact, creature, and enchantment with converted mana cost X or less.
+"Yawgmoth," Freyalise whispered as she set the bomb, "now you will pay for your treachery."
+Green, Discard a creature card: Search your library for a creature card, reveal that card, and put it into your hand. Then shuffle your library.
+Destroy target enchantment.
+Target creature gets +2/+2 until end of turn.
+Destroy target nonblack creature. It can't be regenerated.
+Counter target noncreature spell.
+Simoon deals 1 damage to each creature target opponent controls.
+Hot wind whipped up as if the weather itself wanted to fight Phyrexians.
+Return target permanent to its owner's hand. Then that player discards a card.
+Anything sent into a plagued world is bound to come back infected.
+Look at the top five cards of your library. As many times as you choose, you may pay 1 life, put those cards on the bottom of your library in any order, then look at the top five cards of your library. Then shuffle your library and put the last cards you looked at this way on top of it in any order.
+Counter target spell. Its controller loses 3 life.
+Destroy target enchantment.
+Flashback Green (You may cast this card from your graveyard for its flashback cost. Then exile it.)
+"May angels carry him into the Blessed Sleep with dreams of sunlit days and moonless nights."
+—Tomb inscription of Saint Raban
+Counter target spell. You gain 3 life.
+"Your presumption is your downfall."
+Destroy target creature. It can't be regenerated.
+"I've seen death before. My mother succumbing to illness, my comrades bleeding on the battlefield . . . But I'd never seen anything as dreadful as that."
+—Taani, berserker of Etlan
+Fire deals 2 damage divided as you choose among one or two target creatures and/or players.
+Tap target permanent.
+Draw a card.
