@@ -58,7 +58,6 @@ for word in magic_str.split():
 #cool
 
 for i in range(10):
-    i
     if i % 2 == 0:
         first = random.choice(magic_words[4])
         second = random.choice(magic_words[2])
