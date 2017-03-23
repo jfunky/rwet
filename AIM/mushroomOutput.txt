@@ -1,0 +1,40 @@
+sLoWlYtWeNtY122dish (5:31:09 PM): sup ;)
+sErViNg1893)nUmBeR (5:31:49 PM):
+
+Salted Piperites
+sLoWlYtWeNtY122dish (5:32:15 PM): vinegar sides Piperites
+sErViNg1893)nUmBeR (5:31:49 PM):
+
+In some parts of Russia mushrooms form an important part of the diet of the people  especially during the Lenten season  when the fast of the Greek church is very strictly kept  and meat  fish  eggs  and butter are forbidden
+sLoWlYtWeNtY122dish (5:32:15 PM): oil brydon
+sErViNg1893)nUmBeR (5:31:49 PM): or to whiddon
+sLoWlYtWeNtY122dish (5:32:15 PM):  Lay the mushrooms in a tin dish  put a small piece of butter on the top of each  and season with pepper and salt
+sLoWlYtWeNtY122dish (5:32:15 PM): agarics boil galt
+sErViNg1893)nUmBeR (5:32:42 PM): ;)
+sLoWlYtWeNtY122dish (5:32:44 PM): <3
+
+
+
+oNiOnSpEpPeR2 (5:31:09 PM): sup ;)
+tHeY315andfRoM (5:31:49 PM):  Boil vinegar (only the best should be used)  spicing it according to taste
+oNiOnSpEpPeR2 (5:32:15 PM): closely very aced
+tHeY315andfRoM (5:31:49 PM):  When the jar is full a thin round board is placed upon the top layer and pressed down with weights  and as the mass gives way mushrooms are added until the jar is compactly filled
+oNiOnSpEpPeR2 (5:32:15 PM): butter hilde
+tHeY315andfRoM (5:31:49 PM): about a stilled
+oNiOnSpEpPeR2 (5:32:15 PM):  Bacon toasted over mushrooms improves the flavor and saves the butter
+oNiOnSpEpPeR2 (5:32:15 PM): with slices mutter
+tHeY315andfRoM (5:32:42 PM): ;)
+oNiOnSpEpPeR2 (5:32:44 PM): <3
+
+
+## ERRORS ##
+oVeNtHiRd216crackers (5:31:09 PM): sup ;)
+uNtIl2fRaNk (5:31:49 PM):
+
+Mushroom Pickle
+oVeNtHiRd216crackers (5:32:15 PM): gills with Pickle
+uNtIl2fRaNk (5:31:49 PM):  Heat a quantity of butter to boiling temperature in a saucepan  seasoning with a small piece of onion
+Traceback (most recent call last):
+  File "AIM.py", line 158, in <module>
+    print ' '.join(line)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 10: ordinal not in range(128)
