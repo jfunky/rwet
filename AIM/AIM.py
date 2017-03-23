@@ -21,6 +21,8 @@ x=0
 #final poem
 all_lines = []
 
+#adapted from stack overflow
+#https://stackoverflow.com/questions/17865563/capitalise-every-other-letter-in-a-string-in-python
 def aimCase(w):
     wordout = ""
     i = True  # capitalize
@@ -33,6 +35,8 @@ def aimCase(w):
             i = not i
     return wordout
 
+#adapted from allison parish's class example
+#https://pronouncing.readthedocs.io/en/latest/tutorial.html
 def rhymingLine(w):
     out = list()
     for word in w.split():
