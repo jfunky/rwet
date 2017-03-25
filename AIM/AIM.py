@@ -88,41 +88,6 @@ for word in input_str.split():
         #all words
         words.append(word9)
 
-for word in input_str.split():
-    #remove punctuation
-    word1 = word.replace(",", "")
-    word2 = word1.replace(".", "")
-    word3 = word2.replace("]", "")
-    word4 = word3.replace("[", "")
-    word5 = word4.replace(";", "")
-    word6 = word5.replace("-", "")
-    if "1" in word:
-        numbers.append(word6)
-    elif "2" in word:
-        numbers.append(word6)
-    elif "3" in word:
-        numbers.append(word6)
-    elif "4" in word:
-        numbers.append(word6)
-    elif "5" in word:
-        numbers.append(word6)
-    elif "6" in word:
-        numbers.append(word6)
-    elif "7" in word:
-        numbers.append(word6)
-    elif "8" in word:
-        numbers.append(word6)
-    elif "9" in word:
-        numbers.append(word6)
-    elif "0" in word:
-        numbers.append(word6)
-    else:
-        #screen names
-        if len(word6) > 3 and len(word6) < 8:
-            sn.append(aimCase(word6))
-        #all words
-        words.append(word6)
-
 #split lines
 for line in input_str.split('.'):
     line1 = line.split(",")
@@ -141,7 +106,6 @@ rhyme2a = rhymingLine(text2)
 rhyme2b = rhymingLine(text2)
 text3  = ' '.join(random.choice(lines))
 rhyme3 = rhymingLine(text3)
-
 
 #MAKE AIM CONVERSATION POEM
 line1 = [sn1, "(5:31:09 PM): sup ;)"]
