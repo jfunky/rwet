@@ -18,8 +18,8 @@ for page in pdf.pages:
     if len(line) > 0:
         lines.append(line)
 
-
+print lines
 # markov.word_level_generate(lines, 3, count=4)
 markov.char_level_generate(lines, 3, count=4)
 # print '\n'.join(markov.word_level_generate(lines, 2, count=2))
-print '\n'.join(markov.char_level_generate(lines, 6, count=8))
+#print '\n'.join(markov.char_level_generate(lines, 6, count=8))
