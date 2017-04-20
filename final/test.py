@@ -1,3 +1,8 @@
+#by jasmine
+#april 2017
+#v 0.0.1
+#final
+
 #code to create a dictionary from csv
 #from https://stackoverflow.com/questions/6740918/creating-a-dictionary-from-a-csv-file
 
@@ -17,13 +22,10 @@ usgstxt = list()
 chinapdf = pyPdf.PdfFileReader(open("china_rare_earths.pdf", "rb"))
 usgspdf = pyPdf.PdfFileReader(open("us_deposits.pdf", "rb"))
 
-#split budget lines & create word list
+#create word list
 definitions.pdfpages(p=chinapdf, start=3, end=13, out=chinatxt)
 #definitions.pdfpages(p=usgspdf, start=7, end=29, out=usgstxt)
 
-#print chinatxt[0:10]
-#print chinatxt[0]
-#print string
 
 #get rare earths list & make a dictionary of products
 with open('rare_earths.csv', mode='r') as infile:
@@ -58,15 +60,6 @@ reemodel = markov.build_model(chinatxt, 3)
 for i in range(8):
     print ''.join(markov.generate(admodel, 4))
     print ' '.join(markov.generate(reemodel, 2))
-
-
-#####
-# testing different markov options
-#####
-
-# NAH
-# markov.char_level_generate(ads, 7, count=4)
-# print ''.join(markov.char_level_generate(ad_str, 6, count=8))
 
 
 # works pretty well !!
