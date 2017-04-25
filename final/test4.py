@@ -20,7 +20,6 @@ nlp = spacy.load('en')
 #lists
 nouns = list()
 ads = list()
-chinatxt = list()
 usgstxt = list()
 sources = list()
 
@@ -28,19 +27,22 @@ sources = list()
 #only want pages with relevant info (not title pages, etc)
 #create word list
 chinapdf = pyPdf.PdfFileReader(open("china_rare_earths.pdf", "rb"))
-definitions.pdfpages(p=chinapdf, start=3, end=13, out=chinatxt)
+pdf_unicode = definitions.pdfpages(p=chinapdf, start=3, end=13)
 
 # read ad text
 ad_str = open('ad_text.txt').read()
+wired_str = open('wired.txt').read()
 for i in ad_str.split():
     ads.append(i)
+for j in wired_str.split():
+    ads.append(j)
 
 #markov chain stuff with the ads
 admodel = markov.build_model(ad_str, 4)
 ad_str = ''.join(markov.generate(admodel, 4))
 
 
-#get rare earths list & make a dictionary of products
+#get rare earths list
 with open('rare_earths.csv', mode='r') as infile:
     reader = csv.reader(infile)
     for row in reader:
@@ -50,8 +52,6 @@ with open('rare_earths.csv', mode='r') as infile:
 
 # read ad text
 ad_unicode = unicode(ad_str)
-pdf_unicode = unicode(chinatxt)
-
 for i in ad_str.split():
     ads.append(i)
 
@@ -59,6 +59,8 @@ for i in ad_str.split():
 addoc = nlp(ad_unicode)
 pdfdoc = nlp(pdf_unicode)
 
+#a python literal is being passed through the unicode functions
+#a string representation of the python code needed to make that string
 for item in pdfdoc.ents:
     if item.label_ == 'GPE':
         sources.append(item.text.strip())
