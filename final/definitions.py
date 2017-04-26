@@ -23,18 +23,14 @@ def sourcesent(s, n, txtin):
     admodel = markov.build_model(txtin, 4)
     txtin = ''.join(markov.generate(admodel, 4))
 
-
     # read ad text
     ad_unicode = unicode(txtin)
 
     #spacy on strings
     addoc = nlp(ad_unicode)
 
-    #random places & nouns
+    #little poem
     poem = []
-    # for i in range(3):
-    #     poem.append(random.choice(s))
-    #     poem.append(random.choice(n))
 
     #sentences from ads
     ad_sentences = []
