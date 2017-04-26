@@ -14,26 +14,31 @@ def pdfpages(p, start, end):
         if n > start and n < end:
             string = page.extractText()
             string += string
-            # line = string.replace(".","\n")
-            # line2 = string.replace("''"," ")
-            # if len(line2) > 0:
-            #     out.append(line2)
-            #     for word in line2.split():
-            #         if len(word) > 0:
-            #             out.append(word)
         n = n + 1
     return string
 
 def sourcesent(s, n, txtin):
+
+    #markov chain stuff with the ads
+    admodel = markov.build_model(txtin, 4)
+    txtin = ''.join(markov.generate(admodel, 4))
+
+
+    # read ad text
+    ad_unicode = unicode(txtin)
+
+    #spacy on strings
+    addoc = nlp(ad_unicode)
+
     #random places & nouns
     poem = []
-    for i in range(3):
-        poem.append(random.choice(s))
-        poem.append(random.choice(n))
+    # for i in range(3):
+    #     poem.append(random.choice(s))
+    #     poem.append(random.choice(n))
 
     #sentences from ads
     ad_sentences = []
-    for sentence in txtin.sents:
+    for sentence in addoc.sents:
         ad_sentences.append(sentence.text)
 
     #append all words

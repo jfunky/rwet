@@ -22,6 +22,7 @@ nouns = list()
 ads = list()
 usgstxt = list()
 sources = list()
+rare_earth = list()
 
 #get pdf pages
 #only want pages with relevant info (not title pages, etc)
@@ -38,8 +39,8 @@ for j in wired_str.split():
     ads.append(j)
 
 #markov chain stuff with the ads
-admodel = markov.build_model(ad_str, 4)
-ad_str = ''.join(markov.generate(admodel, 4))
+##admodel = markov.build_model(ad_str, 4)
+##ad_str = ''.join(markov.generate(admodel, 4))
 
 
 #get rare earths list
@@ -49,14 +50,16 @@ with open('rare_earths.csv', mode='r') as infile:
         for i in row:
             nouns.append(row[0])
             nouns.append(row[1])
+            rare_earth.append(row[0])
+            rare_earth.append(row[1])
 
-# read ad text
-ad_unicode = unicode(ad_str)
+### read ad text
+##ad_unicode = unicode(ad_str)
 for i in ad_str.split():
     ads.append(i)
 
 #spacy on strings
-addoc = nlp(ad_unicode)
+##addoc = nlp(ad_unicode)
 pdfdoc = nlp(pdf_unicode)
 
 #a python literal is being passed through the unicode functions
@@ -70,20 +73,49 @@ for item in pdfdoc.ents:
 for item in pdfdoc.noun_chunks:
     nouns.append(item.text.strip())
 
+# print "--addoc--", addoc
+# print "--ad_str--", ad_str
+
 #make a function so I can call it a lot if I feel like it
-p1 = definitions.sourcesent(s=sources, n=nouns, txtin=addoc)
-p2 = definitions.sourcesent(s=sources, n=nouns, txtin=addoc)
+p1 = definitions.sourcesent(s=sources, n=nouns, txtin=ad_str)
+p2 = definitions.sourcesent(s=sources, n=nouns, txtin=ad_str)
+p3 = definitions.sourcesent(s=sources, n=nouns, txtin=ad_str)
+
+print "--1--", p1, "---"
+print "--2--", p2, "---"
+print "--3--", p3, "---"
+
 
 all_words = []
+count = 0
 for word in p1.split():
+    if word == "rare-earth":
+        word = word.replace("rare-earth",random.choice(rare_earth))
+        count += 1
     all_words.append(word)
 for word in p2.split():
+    if word == "rare-earth":
+        word = word.replace("rare-earth",random.choice(rare_earth))
+        count += 1
     all_words.append(word)
+for word in p3.split():
+    if word == "rare-earth":
+        word = word.replace("rare-earth",random.choice(rare_earth))
+        count += 1
+    all_words.append(word)
+print count
+
 
 #construct & print poem
 n=1
 x=1
 while n < len(all_words):
-    print " ".join(all_words[n-x:n])
-    n = n + (2*x)
-    x = x + (1*x)
+    if n == 1:
+        print " ".join(all_words[n-x:n])
+        n = n + (2*x)
+        x = x + (1*x)
+        print " ".join(all_words[n-x:n])
+    else:
+        n = n + (2*x)
+        x = x + (1*x)
+        print " ".join(all_words[n-x:n])
